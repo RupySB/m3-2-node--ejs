@@ -35,10 +35,7 @@ express()
 
   // this serves up the homepage
   .get("/", (req, res) => {
-    res.render("pages/homepage", {
-      homepage,
-    });
-    res.send("Links to all the questions");
+    res.render("pages/homepage", {});
   })
 
   // this is our catch all endpoint. If a user navigates to any endpoint that is not
